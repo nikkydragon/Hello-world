@@ -16,8 +16,8 @@ steps:
   inputs:
     SonarCloud: 'sonar'
     organization: 'dev-nikky'
-    scannerMode: 'MSBuild'
-    projectKey: 'nikky1990'
+    scannerMode: 'CLI'
+    configMode: 'file'
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
