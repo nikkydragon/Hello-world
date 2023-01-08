@@ -18,6 +18,9 @@ steps:
     organization: 'dev-nikky'
     scannerMode: 'MSBuild'
     projectKey: 'nikky1990'
+- task: VSBuild@1
+  inputs:
+    solution: '**\*.sln'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
