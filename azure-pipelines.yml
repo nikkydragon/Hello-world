@@ -18,15 +18,10 @@ steps:
     organization: 'dev-nikky'
     scannerMode: 'MSBuild'
     projectKey: 'nikky1990'
-- task: VSBuild@1
-  inputs:
-    solution: '**\*.sln'
+
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
